@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #226F54;
+}
+
+#play-area {
+	display: flex;
+	flex-direction: column;
+	background: #DA2C38;
+}
+
+#status {
+	flex: 1;
+	display: flex;
+}
+
+#scores {
+	flex: 1;
+	display: flex;
+}
+
+#options {
+	flex: 1;
+	display: flex;
+}
+
+.score-container {
+	flex: 1;
+	display: flex;
+}
+
+.score-container .score-name {
+	flex: 1;
+}
+
+.score-container div {
+	flex: 1;
+}
+
+button {
+	flex: 1;
+}
