@@ -43,6 +43,16 @@ function playRound(playerSelection) {
 	}
 }
 
+function toggleDarkMode() {
+	const body = document.querySelector("body");
+	if(body.classList.contains("dark")) {
+		body.classList.replace("dark", "light");
+	}
+	else {
+		body.classList.replace("light", "dark");
+	}
+}
+
 function game() {
 	const info = document.querySelector("#status");
 	info.innerHTML = "Hello, welcome to Rock, Paper, Scissors! Make a selection!"
@@ -50,6 +60,7 @@ function game() {
 	document.getElementById("rock").addEventListener("click", () => { playRound("rock"); });
 	document.getElementById("paper").addEventListener("click", () => { playRound("paper"); });
 	document.getElementById("scissors").addEventListener("click", () => { playRound("scissors"); });
+	document.querySelector("#dark-mode").addEventListener("click", () => { toggleDarkMode(); });
 }
 
 game();
